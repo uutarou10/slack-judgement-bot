@@ -1,0 +1,11 @@
+{
+  "name": "slack-judgement-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@slack/client": "^4.3.1",
+    "@types/slack-node": "^0.1.2",
+    "typescript": "^2.9.2"
+  }
+}
