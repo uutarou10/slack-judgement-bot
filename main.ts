@@ -17,7 +17,7 @@ rtm.start();
 let trials: Trial[] = [];
 
 rtm.on('message', event => {
-  if (event.text.includes(`:${config.beginEmoji}:`)) {
+  if (event.text && event.text.includes(`:${config.beginEmoji}:`)) {
     rtm.sendMessage(
       `開廷!\n有罪だと思ったら:${config.guiltyEmoji}:、無罪だと思ったら:${config.notGuiltyEmoji}:をこのメッセージのリアクションにつけてね!(${config.judgementSeconds}秒以内)`,
       event.channel
